@@ -88,7 +88,7 @@ async def display_image(ctx, *args):
     },
     headers={'api-key': dalletoken}
   )
-  print(args)
+  #print(args)
   print(r.json()["output_url"])
   
   await ctx.send(r.json()["output_url"])
